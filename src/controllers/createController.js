@@ -17,7 +17,7 @@ const createController = {
         // 2: creates session
         const newSession = await db.Session.create({idLeague:id})
         
-        // 3: creates fixture
+        // 3: creates fixture with bulkcreate
         res.status(200).json({fixtures:fixture.response})
     },
 
